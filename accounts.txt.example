@@ -1,0 +1,17 @@
+# One account per line.
+#
+# Format:  <session-token>[,<proxy>]
+#   - session-token  (required)  NextAuth cookie value, starts with "eyJ..."
+#   - proxy          (optional)  user:pass@host:port  -- pin a specific proxy to this account
+#
+# If you leave the proxy out, the bot claims a free one from Proxy.txt on the
+# first run and writes it back here, so the line becomes  <token>,<proxy>.
+#
+# Where to get the token:
+#   DevTools -> Application -> Cookies -> https://quests.americanfortress.io
+#   -> copy the value of  __Secure-next-auth.session-token
+#
+# Lines starting with # and blank lines are ignored.
+
+eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..AAAAAAAAAAAAAAAA.PLACEHOLDER_TOKEN_1_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.BBBBBBBBBBBBBBBBBBBBBB
+eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..CCCCCCCCCCCCCCCC.PLACEHOLDER_TOKEN_2_yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.DDDDDDDDDDDDDDDDDDDDDD,proxyuser:proxypass@proxy.example.com:10001

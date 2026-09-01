@@ -1,0 +1,15 @@
+# Spare HTTP(S) proxy pool. One proxy per line.
+#
+# Format:  user:pass@host:port     (or just  host:port  for open proxies)
+#
+# How the bot uses this file:
+#   - an account with no proxy  -> pops the first line here, binds it, removes it
+#   - an account whose proxy dies -> pops the next line, binds it, removes it
+#   A proxy taken from this file is deleted from it, so it is never handed to a
+#   second account. Keep plenty of spares (a few per account).
+
+proxyuser:proxypass@proxy.example.com:10001
+proxyuser:proxypass@proxy.example.com:10002
+proxyuser:proxypass@proxy.example.com:10003
+proxyuser:proxypass@proxy.example.com:10004
+proxyuser:proxypass@proxy.example.com:10005

@@ -1,0 +1,14 @@
+# --- secrets: never commit ---
+accounts.txt
+Proxy.txt
+tokens_cache.json
+daily_state.json
+
+# --- local / generated ---
+.idea/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.tmp
+*.log
